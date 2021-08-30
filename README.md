@@ -1,21 +1,11 @@
-# Synetec Basic .Net API assessement
+Assessment has been completed with following code changes: 
 
-This is Synetec's basic API developer assessment.
-
-If you are reading this, you most probably have been asked to complete this assessment as part of Synetec's interview process.
-
-In this repository, you will find the base project and instructions on what to do with them. 
-
-## How to complete this test
-
-Please follow the instructions in the Instructions.pdf, found in this repository
-
-## How to submit your completed test
-
-To sumbit your test, please 
-1. Fork this repository
-2. Complete the test as per the instructions PDF 
-3. Commit your changes to your (forked) repo 
-4. Send us an http link to your repo that contains the completed test 
-
-**This repo is Read-Only!!** So please don't try to open a pull request
+1. SynetecAssessmentApi project
+	a. Created interface ICalculateBonus to calculate employee bonus and implemented in BonusPoolService class. 
+	b. Created interface IEmployee which contains method related to Employee operation and implemented in EmployeeService class. 
+	c. Refactor code in BonusPoolController, prepare and return of Dto class from  controller intead of service class. 
+	d. Added APIHealthCheck class in HealthCheck folder to check Health of Api after deploying on production. 
+	e. Changes in StartUp.cs class inject service classes and define end point for HealthCheck (/health). 
+2. Added new SynetecAssessmentApi.Test xUnit project
+	a. Implemented Integration test in IntegrationTest folder
+	b. Implemented Unit test in UnitTest folder 
